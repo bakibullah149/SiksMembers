@@ -1,0 +1,24 @@
+﻿@page
+@model SiksMembers.Pages.Member.MemberModel
+@{
+}
+
+<h1 class="display-3 text-center">Details for @Model.Name</h1>
+@{
+	var imagePath = "~/images/"+(Model.ImageTitle+".jpg");
+}
+<br/>
+<br/>
+<div class="align-content-center">
+	<div class="col-3 mb-5 mx-auto">
+		<img src=@imagePath class="w-100" asp-append-version="true"/>
+		<br/>
+		<br/>
+		<ul>
+			<li><h4>Name: @Model.Name</h4></li>
+			<li><h4>Batch: @Model.Batch</h4></li>
+			<li><h4>Department: @Model.Department</h4></li>
+			<li><h4>Phone Number: @Model.PhoneNumber</h4></li>
+		</ul>
+	</div>
+</div>

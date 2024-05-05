@@ -1,0 +1,110 @@
+﻿@page
+@model SiksMembers.Pages.MembersModel
+@{
+}
+<div class="text-center">
+	<div class="mainText">
+		<h1 class="display-4 text-black text-capitalize">
+			Our great Muslim members of IUT
+		</h1>
+		<h4>These people view every aspect of their lives through the lens of Islam</h4>
+		<h4>They try to implement Sharia in IUT</h4>
+		<h4>Do what you can to help them</h4>
+		<p class="smallText"><i>Be a slave of ALLAH</i></p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h1 class="display-4 text-center">Batch-18</h1>
+			@foreach (var Member in Model.SIKSMembers18)
+			{
+				var imagePath = "~/images/"+(Member.ImageTitle + ".jpg");
+				<div class="col-4 mb-5">
+					<a class="member-image"
+					asp-area=""
+					asp-page="Member/Member"
+					asp-route-ImageTitle="@Member.ImageTitle"
+					asp-route-Name="@Member.Name"
+					asp-route-Batch="@Member.Batch"
+					asp-route-Department="@Member.Department"
+					asp-route-PhoneNumber="@Member.PhoneNumber">
+					<img src="@imagePath" class="w-100" asp-append-version="true"/>
+					<br/>
+					<br/>
+					
+				</a>
+					@Member.Name
+				<br/>
+				</div>
+			}
+			<hr/>
+			<hr/>
+			<h1 class="display-4 text-center">Batch-19</h1>
+			@foreach (var Member in Model.SIKSMembers19)
+			{
+				var imagePath = "~/images/" + (Member.ImageTitle + ".jpg");
+				<div class="col-4 mb-5">
+					<a class="member-image"
+					   asp-area=""
+					   asp-page="Member/Member"
+					   asp-route-ImageTitle="@Member.ImageTitle"
+					   asp-route-Name="@Member.Name"
+					   asp-route-Batch="@Member.Batch"
+					   asp-route-Department="@Member.Department"
+					   asp-route-PhoneNumber="@Member.PhoneNumber">
+						<img src="@imagePath" class="w-100" asp-append-version="true" />
+						<br />
+						<br />
+						@Member.Name
+					</a>
+					<br />
+				</div>
+			}
+			<hr />
+			<hr />
+			<h1 class="display-4 text-center">Batch-20</h1>
+			@foreach (var Member in Model.SIKSMembers20)
+			{
+				var imagePath = "~/images/" + (Member.ImageTitle + ".jpg");
+				<div class="col-4 mb-5">
+					<a class="member-image"
+					   asp-area=""
+					   asp-page="Member/Member"
+					   asp-route-ImageTitle="@Member.ImageTitle"
+					   asp-route-Name="@Member.Name"
+					   asp-route-Batch="@Member.Batch"
+					   asp-route-Department="@Member.Department"
+					   asp-route-PhoneNumber="@Member.PhoneNumber">
+						<img src="@imagePath" class="w-100" asp-append-version="true" />
+						<br />
+						<br />
+						@Member.Name
+					</a>
+					<br />
+				</div>
+			}
+			<hr />
+			<hr />
+			<h1 class="display-4 text-center">Batch-21</h1>
+			@foreach (var Member in Model.SIKSMembers21)
+			{
+				var imagePath = "~/images/" + (Member.ImageTitle + ".jpg");
+				<div class="col-4 mb-5">
+					<a class="member-image"
+					   asp-area=""
+					   asp-page="Member/Member"
+					   asp-route-ImageTitle="@Member.ImageTitle"
+					   asp-route-Name="@Member.Name"
+					   asp-route-Batch="@Member.Batch"
+					   asp-route-Department="@Member.Department"
+					   asp-route-PhoneNumber="@Member.PhoneNumber">
+						<img src="@imagePath" class="w-100" asp-append-version="true" />
+						<br />
+						<br />
+						@Member.Name
+					</a>
+					<br />
+				</div>
+			}
+		</div>
+	</div>
+</div>

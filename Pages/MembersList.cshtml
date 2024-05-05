@@ -1,0 +1,96 @@
+﻿@page
+@model SiksMembers.Pages.MembersModel
+@{
+}
+
+<h1 class="text-center">Members List</h1>
+<hr />
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Name
+			</th>
+			<th>
+				Batch
+			</th>
+			<th>
+				Department
+			</th>
+			<th>
+				Phone Number
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var member in Model.SIKSMembers18)
+		{
+			<tr>
+				<td>
+					@member.Name
+				</td>
+				<td>
+					@member.Batch
+				</td>
+				<td>
+					@member.Department
+				</td>
+				<td>
+					@member.PhoneNumber
+				</td>
+			</tr>
+		}
+		@foreach (var member in Model.SIKSMembers19)
+		{
+			<tr>
+				<td>
+					@member.Name
+				</td>
+				<td>
+					@member.Batch
+				</td>
+				<td>
+					@member.Department
+				</td>
+				<td>
+					@member.PhoneNumber
+				</td>
+			</tr>
+		}
+		@foreach (var member in Model.SIKSMembers20)
+		{
+			<tr>
+				<td>
+					@member.Name
+				</td>
+				<td>
+					@member.Batch
+				</td>
+				<td>
+					@member.Department
+				</td>
+				<td>
+					@member.PhoneNumber
+				</td>
+			</tr>
+		}
+		@foreach (var member in Model.SIKSMembers21)
+		{
+			<tr>
+				<td>
+					@member.Name
+				</td>
+				<td>
+					@member.Batch
+				</td>
+				<td>
+					@member.Department
+				</td>
+				<td>
+					@member.PhoneNumber
+				</td>
+			</tr>
+		}
+
+	</tbody>
+</table>
